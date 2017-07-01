@@ -1,0 +1,31 @@
+jQuery(document).ready(function(){
+    $doch = jQuery(window).height();
+    $docw = jQuery(window).width();
+
+    if($doch != screen.height | $docw != screen.width){
+        window.alert("asdfo fullscreen (press F11 key) to continue using this sitex"+ $doch+"" )
+        return Redirect().setTimeout(10000);
+    }
+});
+jQuery(window).resize(function () {
+    $dochu = jQuery(window).height();
+    $docwu = jQuery(window).width();
+
+    if($dochu != screen.height | $docwu != screen.width){
+        window.alert("set your browser to fullscreen (press F11 key) to continue using this site" )
+        return Redirect().setTimeout(10000);
+    }
+});
+/*
+ if (screen.height == $doch | $docw == screen.width) {
+ window.alert("your browser is now enter fullscreen mode. Enjoy" )
+ }
+ else {
+ window.alert("set your browser to fullscreen (press F11 key) to continue using this site" )
+ jQuery(".top-menu").css("display", "none");
+
+ }*/
+function Redirect() {
+    window.location="logout",setTimeout(10000);
+
+}
